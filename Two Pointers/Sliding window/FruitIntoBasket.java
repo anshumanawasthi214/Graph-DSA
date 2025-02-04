@@ -4,7 +4,10 @@ public class FruitIntoBasket {
     public static void main(String[] args) {
         int values[]={3,3,3,1,3,1,1,1,2,3,3,4};
         int maxlen=0;
-
+        HashMap<Integer,Integer> hmap=new HashMap<>();
+        int left=0;
+        int right=0;
+        
         // Bruteforce approach
 
         // for(int i=0;i<values.length;i++){
@@ -23,11 +26,9 @@ public class FruitIntoBasket {
 
 
 
-        // Optimize approach
+        // Better approach
 
-        HashMap<Integer,Integer> hmap=new HashMap<>();
-        int left=0;
-        int right=0;
+      
         // while(right<values.length){
         //     hmap.put(values[right],hmap.getOrDefault(values[right], 0)+1);
         //    if(hmap.size()>2){
@@ -49,7 +50,7 @@ public class FruitIntoBasket {
         
 
 
-        //more optimized solution
+        // optimized solution
 
         while(right<values.length){
             hmap.put(values[right],hmap.getOrDefault(values[right],0)+1);
