@@ -1,6 +1,7 @@
 public class MaxConsecutiveOnes {
     public static void main(String[] args) {
-        //   - Bruteforce appr.
+        // 
+        //  - Bruteforce appr.
         int k=2;                                                       
         int maxlen=0;                                                
        /*  for(int i=0;i<values.length;i++){                            
@@ -64,8 +65,5 @@ public class MaxConsecutiveOnes {
             right++;
         }
         System.out.println(maxlen);
-
-
-        
     }
 }
