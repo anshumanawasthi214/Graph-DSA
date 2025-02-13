@@ -1,5 +1,5 @@
 public class MatrixGraph_Representation {
-            //-----------------Matrix representation of Graph
+            //-----------------Matrix representation of Graph------------
     public static void main(String[] args) {
        int n=5;// no of nodes/vertices
        int m=5;// no of edges
@@ -8,6 +8,7 @@ public class MatrixGraph_Representation {
         //edge 1---2
         adj[1][2]=1;
         adj[2][1]=1;
+
 
         //edge 1--3
         adj[1][3]=1;
